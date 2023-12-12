@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231207 13:08:37.762" rpa="false" schemaversion="4">
+<suite id="s1" name="Test case" source="C:\Users\Admin\PycharmProjects\RobotFrame\Test_cases\Test_case.robot">
+<test id="s1-t1" name="Login_test" line="6">
+<kw name="opening browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231207 13:08:38.589" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20231207 13:08:38.588" endtime="20231207 13:08:44.326"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231207 13:08:44.326" endtime="20231207 13:08:44.464"/>
+</kw>
+<kw name="wait for and click on element" library="Helpers">
+<arg>${Cancel_button}</arg>
+<arg>5</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 13:08:44.466" endtime="20231207 13:08:44.925"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:44.926" level="INFO">Clicking element 'xpath://span[@class='_30XB9F']'.</msg>
+<status status="PASS" starttime="20231207 13:08:44.926" endtime="20231207 13:08:45.193"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:44.464" endtime="20231207 13:08:45.193"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${produc_category}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231207 13:08:45.195" level="INFO">Simulating Mouse Over on element 'xpath://*[text()='Fashion']'.</msg>
+<status status="PASS" starttime="20231207 13:08:45.193" endtime="20231207 13:08:45.592"/>
+</kw>
+<kw name="wait for and click on element" library="Helpers">
+<arg>${products}</arg>
+<arg>3</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 13:08:45.593" endtime="20231207 13:08:45.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:45.728" level="INFO">Clicking element 'xpath://a[@class='_1BJVlg _11MZbx']'.</msg>
+<status status="PASS" starttime="20231207 13:08:45.727" endtime="20231207 13:08:48.538"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:45.592" endtime="20231207 13:08:48.538"/>
+</kw>
+<kw name="wait for and click on element" library="Helpers">
+<arg>${item}</arg>
+<arg>2</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 13:08:48.539" endtime="20231207 13:08:48.637"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:48.639" level="INFO">Clicking element 'xpath:(//div[@class='_1xHGtK _373qXS'])[1]'.</msg>
+<status status="PASS" starttime="20231207 13:08:48.638" endtime="20231207 13:08:49.680"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:48.538" endtime="20231207 13:08:49.680"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231207 13:08:49.702" level="INFO">${windows} = ['63B319020DB0B946E029664D1D88F182', 'DBB8CBBE6451E4A977D15C9C043D16DC']</msg>
+<status status="PASS" starttime="20231207 13:08:49.681" endtime="20231207 13:08:49.702"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231207 13:08:49.703" endtime="20231207 13:08:49.827"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231207 13:08:51.892" level="INFO">${title} = BLUE MARTIN Men Checkered Casual Multicolor Shirt - Buy BLUE MARTIN Men Checkered Casual Multicolor Shirt Online at Best Prices in India | Flipkart.com</msg>
+<status status="PASS" starttime="20231207 13:08:49.828" endtime="20231207 13:08:51.892"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${message}</var>
+<arg>${text}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:51.981" level="INFO">${message} = BLUE MARTIN </msg>
+<status status="PASS" starttime="20231207 13:08:51.892" endtime="20231207 13:08:51.981"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231207 13:08:51.981" endtime="20231207 13:08:51.982"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231207 13:08:52.019" level="INFO">Current page contains text 'BLUE MARTIN '.</msg>
+<status status="PASS" starttime="20231207 13:08:51.982" endtime="20231207 13:08:52.020"/>
+</kw>
+<kw name="wait for and click on element" library="Helpers">
+<arg>${size}</arg>
+<arg>6</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 13:08:52.020" endtime="20231207 13:08:52.070"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:52.071" level="INFO">Clicking element 'xpath://a[text()='M']'.</msg>
+<status status="PASS" starttime="20231207 13:08:52.070" endtime="20231207 13:08:52.238"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:52.020" endtime="20231207 13:08:52.238"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231207 13:08:57.238" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231207 13:08:52.238" endtime="20231207 13:08:57.238"/>
+</kw>
+<kw name="wait for and click on element" library="Helpers">
+<arg>${cart}</arg>
+<arg>2</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231207 13:08:57.238" endtime="20231207 13:08:57.287"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231207 13:08:57.288" level="INFO">Clicking element 'xpath://li[@class='col col-6-12']/button'.</msg>
+<status status="PASS" starttime="20231207 13:08:57.288" endtime="20231207 13:08:57.364"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:57.238" endtime="20231207 13:08:57.364"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:38.588" endtime="20231207 13:08:57.364"/>
+</kw>
+<status status="PASS" starttime="20231207 13:08:38.587" endtime="20231207 13:08:57.364"/>
+</test>
+<status status="PASS" starttime="20231207 13:08:37.770" endtime="20231207 13:08:57.366"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test case">Test case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
