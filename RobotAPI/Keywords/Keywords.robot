@@ -7,7 +7,7 @@ SimpleBookAPI
 
 # - getting Authentication token -
     Create Session      simpleBooks   ${URL}
-    ${Body}     create dictionary   clientName=chetan98769      clientEmail=chetan.kumar176591@gmail.com
+    ${Body}     create dictionary   clientName=chetan976755434539      clientEmail=chetan.kumar1709876591@gmail.com
     ${response}=    POST On Session     simpleBooks     ${AuthneticateEndpoint}     json=${Body}
     ${token}=    Get Value From Json    ${response.json()}     $[accessToken]
     ${AccessToken}     set variable    ${token[0]}
